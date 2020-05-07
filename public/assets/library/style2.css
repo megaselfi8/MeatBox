@@ -1,0 +1,78 @@
+/* ---------------------|screen|--------------------- */
+.full-screen {
+    min-height: 100vh;
+}
+
+.half-screen {
+    min-height: 50vh;
+}
+
+/* ---------------------| container & space |--------------------- */
+.space {
+    padding-top: 10% !important;
+    padding-bottom: 10% !important;
+}
+
+.space-xs {
+    padding-top: 2% !important;
+    padding-bottom: 2% !important;
+}
+
+/* ---------------------|background color|--------------------- */
+.bg-color-transparent {
+    background-color: transparent !important;
+}
+
+.bg-color-0 {
+    background-color: #ffffff;
+}
+
+.bg-color-1 {
+    background-color: #EFEFEF;
+}
+
+.bg-color-2 {
+    background-color: #2E3054;
+}
+
+.bg-color-3 {
+    background-color: #FA881D;
+}
+
+
+
+
+/*---------------------|paket produk|---------------------*/
+.panel-produk {
+    margin-top: 100px;
+    padding: 80px 120px;
+}
+
+.panel {
+    border: 1px solid #008080;
+    transition: box-shadow 0.5s;
+}
+
+.panel:hover {
+    box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+}
+
+.panel-body img {
+    width: 150px;
+    height: 100px;
+}
+
+.panel-footer {
+    background-color: #fff;
+}
+
+.panel-footer .btn {
+    background-color: #008080;
+    color: #fff;
+}
+
+.panel-footer .btn:hover {
+    border: 1px solid #008080;
+    background-color: #fff;
+    color: #008080;
+}
