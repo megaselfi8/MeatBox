@@ -1,9 +1,9 @@
-<!DOCTYPE html>
+{{-- <!DOCTYPE html>
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>Meat Box</title>
+		<title>MeatBox</title>
 
 		<!-- CSS -->
 		<link rel="stylesheet"  href="{{'/assets/library/bootstrap-4.4.1/css/bootstrap.css'}}">
@@ -12,14 +12,8 @@
 		<script src="{{url('/assets/library/jquery-3.4.1/jquery-3.4.1.js')}}"></script>
 		<script src="{{url('/assets/library/bootstrap-4.4.1/js/bootstrap.js')}}"></script>
 
-		<!-- My Font -->
-		<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Quattrocento+Sans&display=swap">
-		
 		<!-- My CSS -->
 		<link rel="stylesheet"  href="/assets/library/style.css">
-		<link rel="stylesheet" href="/assets/library/animate.css">
-		<!-- My JS -->
-		<script src="{{url('/assets/library/anim.js')}}"></script>
 
 	</head>
 	<body>
@@ -288,4 +282,260 @@
 		</div>
 
 	</body>
+</html> --}}
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>{{$title}}</title>
+	<meta charset="UTF-8">
+	<meta name="description" content="The Plaza eCommerce Template">
+	<meta name="keywords" content="plaza, eCommerce, creative, html">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!-- Favicon -->
+	<link href="/assets/image/METBROX.png" rel="shortcut icon" />
+
+	<!-- Google Fonts -->
+	<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+	<!-- Stylesheets -->
+	@include('market_css')
+
+</head>
+
+<body>
+	<!-- Page Preloder -->
+	<div id="preloder">
+		<div class="loader"></div>
+	</div>
+	
+
+	<!-- Header section -->
+	<header class="header-section">
+		<div class="container-fluid">
+			<!-- logo -->
+			<div class="site-logo">
+				<img src="/assets/image/METBROX.png" alt="logo" style="width: 150px;">
+			</div>
+			<!-- responsive -->
+			<div class="nav-switch">
+				<i class="fa fa-bars"></i>
+			</div>
+			<div class="header-right">
+				<a href="{{url('/cart')}}" class="card-bag"><img src="assets/library/marketplace/img/icons/bag.png" alt=""><span>{{ $cart->jumlah_keranjang }}</span></a>
+				<a href="/login" class="search" style="width: 30px; height: 30px;"><img src="assets/library/marketplace/img/icons/login.png" alt=""></a>
+			</div>
+
+			<!-- site menu -->
+			<ul class="main-menu">
+				<li><a href="/">Home</a></li>
+				<li><a href="/produk/daging">Produk</a></li>
+				<li><a href="contact.html">Contact</a></li>
+			</ul>
+		</div>
+	</header>
+	<!-- Header section end -->
+
+
+	<!-- Hero section -->
+	<section class="hero-section set-bg" data-setbg="assets/library/marketplace/img/bg.jpg">
+		<div class="hero-slider owl-carousel">
+			<div class="hs-item">
+				<div class="hs-left"><img src="assets/library/marketplace/img/slider-img.png" alt=""></div>
+				<div class="hs-right">
+					<div class="hs-content">
+						<h2><span>Juaranya</span> <br>DAGING BERKUALITAS</h2>
+					</div>
+				</div>
+			</div>
+			<div class="hs-item">
+				<div class="hs-left"><img src="assets/library/marketplace/img/slider-img.png" alt=""></div>
+				<div class="hs-right">
+					<div class="hs-content">
+						<div class="price">Harga bersahabat</div>
+						<h2><span>Super</span> <br>Daging terbaik</h2>
+
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Hero section end -->
+
+
+	<!-- Featured section -->
+	<div class="featured-section spad">
+		<div class="container">
+			<div class="row">
+				<div class="col-md-6">
+					<div class="featured-item">
+						<img src="assets/library/marketplace/img/featured/featured-1.jpg" alt="">
+					</div>
+				</div>
+				<div class="col-md-6">
+					<div class="featured-item mb-0">
+						<img src="assets/library/marketplace/img/featured/featured-2.jpg" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Featured section end -->
+
+
+	<!-- Product section -->
+	<section class="product-section spad">
+		<div class="container">
+			<ul class="product-filter controls">
+				<h2>Berbagai Macam Produk Kami</h2>
+			</ul>
+			<div class="row" id="product-filter">
+
+				<div class="mix col-lg-3 col-md-6 best">
+					<div class="product-item">
+						<figure>
+							<img src="assets/library/marketplace/img/products/1.jpg" alt="">
+							<div class="bache">Ayam</div>
+						</figure>
+						<div class="product-info">
+							<h5>Daging Ayam</h5>
+							<p>$39.90</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mix col-lg-3 col-md-6 new">
+					<div class="product-item">
+						<figure>
+							<img src="assets/library/marketplace/img/products/2.jpg" alt="">
+							<div class="bache">Sapi</div>
+						</figure>
+						<div class="product-info">
+							<h5>Daging Sapi</h5>
+							<p>$19.50</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mix col-lg-3 col-md-6 best">
+					<div class="product-item">
+						<figure>
+							<img src="assets/library/marketplace/img/products/3.jpg" alt="">
+							<div class="bache">T-Rex</div>
+						</figure>
+						<div class="product-info">
+							<h5>Daging Kambing</h5>
+							<p>$59.90</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="mix col-lg-3 col-md-6 best">
+					<div class="product-item">
+						<figure>
+							<img src="assets/library/marketplace/img/products/3.jpg" alt="">
+							<div class="bache">Babi</div>
+						</figure>
+						<div class="product-info">
+							<h5>Daging Babi</h5>
+							<p>$59.90</p>
+						</div>
+					</div>
+				</div>
+
+				<div class="col-md-2 offset-5">
+					<a href="#" class="site-btn btn-line" style="text-align: center;">Belanja Sekarang</a>
+				</div>
+			</div>
+
+			<br><br><br><br><br><br>
+
+		</div>
+	</section>
+	<!-- Product section end -->
+
+
+	<!-- Footer top section -->
+	<section class="footer-top-section home-footer">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-3 col-md-8 col-sm-12">
+					<div class="footer-widget about-widget">
+						<img src="/assets/image/METBROX.png" class="footer-logo" alt="" style="width: 150px;">
+						<p>Kami Hadir sebagai supplier daging modern yang hadir di berbagai media online.</p>
+						<div class="cards">
+							<img src="assets/library/marketplace/img/cards/5.png" alt="">
+							<img src="assets/library/marketplace/img/cards/4.png" alt="">
+							<img src="assets/library/marketplace/img/cards/3.png" alt="">
+							<img src="assets/library/marketplace/img/cards/2.png" alt="">
+							<img src="assets/library/marketplace/img/cards/1.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="col-lg-2 col-md-4 col-sm-6"></div>
+
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Sitemap</h6>
+						<ul>
+							<li><a href="#">Partners</a></li>
+							<li><a href="#">Bloggers</a></li>
+							<li><a href="#">Support</a></li>
+							<li><a href="#">Terms of Use</a></li>
+							<li><a href="#">Press</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Produk</h6>
+						<ul>
+							<li><a href="#">Daging</a></li>
+							<li><a href="#">Daging</a></li>
+							<li><a href="#">Daging</a></li>
+							<li><a href="#">Daging</a></li>
+							<li><a href="#">Daging</a></li>
+						</ul>
+					</div>
+				</div>
+				<div class="col-lg-2 col-md-4 col-sm-6">
+					<div class="footer-widget">
+						<h6 class="fw-title">Contact</h6>
+						<div class="text-box">
+							<p>MeatBox.Corp</p>
+							<p>Kota Malang, Jawa Timur</p>
+							<p>+53 345 7953 32453</p>
+							<p>meatbox@gmail.com</p>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+	<!-- Footer top section end -->
+
+	<!-- Footer section -->
+	<footer class="footer-section">
+		<div class="container">
+			<p class="copyright">
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+				Copyright &copy;<script>
+					document.write(new Date().getFullYear());
+				</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by
+				<a href="https://colorlib.com" target="_blank">Colorlib</a>
+				<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+			</p>
+		</div>
+	</footer>
+	<!-- Footer section end -->
+
+
+	<!--====== Javascripts & Jquery ======-->
+	@include('market_js')
+	
+</body>
+
 </html>

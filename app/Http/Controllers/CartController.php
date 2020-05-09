@@ -62,12 +62,12 @@ class CartController extends Controller
       return redirect('/cart?produkId='. $request->get('t_produk_id'));
     }
 
-    $data['title']  = "MeatBox | Nota";
+    $data['title']  = "MeatBox | Cart";
     $data['cart'] = DB::selectOne("SELECT COUNT(*) AS jumlah_keranjang FROM t_nota WHERE id_customer=? AND status_transaksi='pending'", [$request->session()->get('s_id')]);
     $data['nota'] = $nota;
     $data['nota_tag'] = $this->hitung($request);
     $data['tanggal'] = date('d-m-Y H:i:s');
-    return view('nota', $data);
+    return view('cart', $data);
   }
 
   public function checkout($t_nota_id)

@@ -11,13 +11,18 @@
 |
 */
 
-Route::get('/', function () {
-    return view('index');
-});
+// Route::get('/', function () {
+//     return view('index');
+// });
+
+//Index
+Route::get('/','IndexController@index');
 
 
 // List Produk
 Route::get('/produk/daging','ListProdukController@index');
+Route::get('/produk/daging/search-produk','ListProdukController@searchProduk');
+
 
 // Cart / Nota
 Route::get('/cart','CartController@cart');
