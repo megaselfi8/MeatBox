@@ -30,6 +30,6 @@ class InvoiceController extends Controller
         $data['nota'] = DB::selectOne("SELECT * FROM t_nota WHERE id=?", [$t_nota_id]);
         $data['cart'] = DB::select("SELECT * FROM t_keranjang WHERE t_nota_id=?", [$t_nota_id]);
         $pdf = PDF::loadview('invoice_print', $data);
-        return $pdf->download('reporting-file.pdf');
+        return $pdf->download('struk-nota.pdf');
     }
 }

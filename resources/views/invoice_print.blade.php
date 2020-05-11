@@ -47,7 +47,7 @@
               </table>
             </div>
             <div class="col-md-6 text-right">
-              <img src="/assets/image/METBROX.png" alt="logo" width="100">
+              <img src="{{url('/assets/image/METBROX.png')}}" alt="logo" width="100">
             </div>
           </div>
 

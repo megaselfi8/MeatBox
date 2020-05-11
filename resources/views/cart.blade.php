@@ -36,7 +36,7 @@
 				<i class="fa fa-bars"></i>
 			</div>
 			<div class="header-right">
-				<a href="cart.html" class="card-bag"><img src="/assets/library/marketplace/img/icons/bag.png" alt=""><span>{{ $cart->jumlah_keranjang }}</span></a>
+				<a href="{{url('/cart')}}" class="card-bag"><img src="/assets/library/marketplace/img/icons/bag.png" alt=""><span>{{ $cart->jumlah_keranjang }}</span></a>
 			</div>
 			<!-- site menu -->
 			<ul class="main-menu">

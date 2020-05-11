@@ -28,12 +28,12 @@ Route::get('/produk/daging/search-produk','ListProdukController@searchProduk');
 Route::get('/cart','CartController@cart');
 Route::get('/cart/plus','CartController@plusQty');
 Route::get('/cart/minus','CartController@minQty');
-Route::get('/cart/checkout/{$t_nota_id}','CartController@checkout');
+Route::get('/cart/checkout/{t_nota_id}','CartController@checkout');
 
 //Invoice
-Route::get('/invoice/{$t_nota_id}', 'InvoiceController@index');
-Route::get('/invoice/preview/{$t_nota_id}', 'InvoiceController@previewPdf');
-Route::get('/invoice/print/{$t_nota_id}', 'InvoiceController@printPdf');
+Route::get('/invoice/{t_nota_id}', 'InvoiceController@index');
+Route::get('/invoice/preview/{t_nota_id}', 'InvoiceController@previewPdf');
+Route::get('/invoice/print/{t_nota_id}', 'InvoiceController@printPdf');
 
 
 // Login

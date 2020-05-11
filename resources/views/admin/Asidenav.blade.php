@@ -23,11 +23,13 @@
         <a href="/grafik"> <i class="fa fa-bar-chart" aria-hidden="true"></i> Grafik </a>
       </li>
 
-
-
       {{-- <li>
         <a href="#"><i class="fa fa-envelope"></i> Message </a>
       </li> --}}
+
+      <li>
+        <a href="/"><i class="fa fa-laptop"></i> Landing Page <span class="label label-success pull-right">Coming Soon</span></a>
+      </li>
 
     </ul>
   </div>

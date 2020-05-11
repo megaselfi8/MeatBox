@@ -12,16 +12,6 @@ class CartController extends Controller
     $nota = DB::selectOne("SELECT * FROM t_nota WHERE status_transaksi='pending' AND jenis_faktur='penjualan' AND id_customer=?", [
       $request->session()->get('s_id')
     ]);
-
-    // hitungan total tagihan
-    // $calc = DB::selectOne("SELECT SUM(subtotal) AS total FROM t_keranjang WHERE t_nota_id=?", [
-    //   $nota->id
-    // ]);
-    // $data['totproduk'] = $calc->total;
-    // $data['ppn'] = $calc->total * 0.1;
-    // $data['tottagihan'] = $data['totproduk'] - $data['ppn'];
-
-
     
     if ($nota != null) {
       // echo "Nota Exist";
